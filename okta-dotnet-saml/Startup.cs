@@ -31,11 +31,12 @@ namespace okta_dotnet_saml
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions
+                /*app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions
                 {
                     HotModuleReplacement = true,
-                    ReactHotModuleReplacement = true
-                });
+                    ReactHotModuleReplacement = true,
+                    ConfigFile = "./config/webpack.config.dev.js"
+                });*/
             }
             else
             {
